@@ -1,5 +1,3 @@
-# Тестовое задание Junior Data Analyst: продажи и запасы электротехники
-
 ## Структура
 
 | Путь | Что внутри |
@@ -22,11 +20,3 @@ python forecast/forecast.py     # 3. forecast.csv + проверка метод�
 python analysis/actions.py      # действия для закупок
 python looker/build_sheets.py   # 4. книга для Google Sheets
 ```
-Если установлен DuckDB CLI, SQL можно выполнить напрямую: `mkdir output && duckdb < sql/solution.sql`.
-
-
-## 5. Выводы
-См. `slides/Junior_DA_results.pdf`:
-1. Перебросить 963 ед. (4,3 млн KGS) между складами (`output/transfer_plan.csv`).
-2. Срочно закупить 1 056 ед. (0,65 млн KGS) по OOS-парам и парам с покрытием меньше 7 дней (`output/replenishment.csv`).
-3. Заморозить закупки по 8 OVERSTOCK-парам, на которые приходится 4,5 млн KGS излишка (34% стоимости запаса).
